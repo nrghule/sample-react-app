@@ -12,6 +12,7 @@ phases:
       - echo Build started on `date`
       - echo Compiling
       - sudo npm run build
+      - ls
   post_build:
     commands:
       - echo Build completed on `date`
