@@ -12,10 +12,21 @@ curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install nodejs -y
 sudo apt-get -y install npm
 
-cd /var/www/html
-sudo rm -rf *
-cd /app
+# # check to make sure the symbolic link for nodejs node exists
+echo checking for nodejs symlink
+file="/usr/bin/node"
+if [ -f $file ] && [ ! -L $file ] ; then
+  echo "$file exists and is not a symlink"
+  sudo ln -s /usr/bin/nodejs
+else
+  echo "$file exists and is already a symlink"
+fi
 
-sudo npm i
-sudo npm run build
-sudo cp -r build/. /var/www/html
+# # install the application using npm
+# # we need to traverse to where the application bundle is copied too.
+# echo installing application with npm
+cd /var/www/html
+sudo npm install
+
+echo installing pm2
+sudo npm install pm2 -g
