@@ -3,12 +3,9 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
-    commands:
-      - npm install -g
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
-
       - sudo npm i
   build:
     commands:
