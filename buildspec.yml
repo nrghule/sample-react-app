@@ -17,7 +17,8 @@ phases:
       - echo Build completed on `date`
 # Include only the files required for your application to run.
 artifacts:
-  #base-directory: build/
   base-directory: /
   files:
-    - "**/*"
+    - appspec.yml
+    - scripts/**
+    - build/**
