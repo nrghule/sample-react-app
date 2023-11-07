@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18
+      nodejs: 1
   pre_build:
     commands:
       #installs dependencies into the node_modules/ directory
@@ -19,6 +19,4 @@ phases:
 artifacts:
   base-directory: /
   files:
-    - appspec.yml
-    - scripts/**
-    - build/**
+    - "**/*"
