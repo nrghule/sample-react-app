@@ -8,7 +8,7 @@ cd /var/www/html
 sudo rm -rf *
 sudo cp -r /app/build/. /var/www/html
 
-sudo service apache2 start
+sudo service apache2 restart
 
 
 # start the application with pm2
