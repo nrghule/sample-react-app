@@ -8,8 +8,9 @@ sudo apt-get -y install npm
 
 cd /var/www/html
 sudo rm -rf *
+sudo mkdir /app
 cd /app
 
 sudo npm i
 sudo npm run build
-sudo cp -r build/. /var/www/html
+sudo cp -r /app/build/. /var/www/html
