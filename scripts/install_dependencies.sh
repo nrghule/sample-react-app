@@ -8,7 +8,6 @@ sudo apt-get -y install npm
 
 cd /var/www/html
 sudo rm -rf *
-sudo mkdir /app
 cd /app
 
 sudo npm i
