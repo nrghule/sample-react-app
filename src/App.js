@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Update Final by Narendra Ghule (PSSPL)
+          Learn React Update Final by Vad Soft
         </a>
       </header>
     </div>
