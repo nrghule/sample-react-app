@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Update ONE by PSSPL Team
+          Learn React Update TWO by PSSPL Team
         </a>
       </header>
     </div>
