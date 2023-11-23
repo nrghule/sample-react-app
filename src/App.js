@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Update Test by Vad Soft update 134
+          Learn React Update ONE by PSSPL Team
         </a>
       </header>
     </div>
