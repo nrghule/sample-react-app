@@ -16,5 +16,5 @@ echo starting application...
 
 #sudo service apache2 start
 
-sudo rm -rf /app/*
+sudo rm -rf /app
 #sudo pm2 start npm -- run production
