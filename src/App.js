@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          React Update TWO by PSSPL Team
+          React Update ONE by PSSPL Team
         </a>
       </header>
     </div>
